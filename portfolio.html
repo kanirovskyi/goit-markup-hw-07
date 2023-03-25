@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <!--MainPage-->
+  <body>
+    <!--Header сторінки Portfolio (ідентичний для Index)- DONE-->
+    <header class="top-line">
+      <div class="container header-line">
+        <nav class="header-navi">
+          <!--Logo WebStudio-->
+          <a href="./index.html" target="_parent" class="logodecor">
+            <span class="logoweb">WEB</span
+            ><span class="logostudio">STUDIO</span>
+          </a>
+
+          <!--Список навігації-->
+          <ul class="main-navi list">
+            <!--Studio-->
+            <li class="main-navi-studio-link">
+              <a href="./index.html" target="_parent" class="navi-link"
+                >Studio</a
+              >
+            </li>
+            <!--Portfolio-->
+            <li class="main-navi-portfolio-link">
+              <a
+                href="./portfolio.html"
+                target="_parent"
+                class="navi-link current"
+                >Portfolio</a
+              >
+            </li>
+            <!--Contacts-->
+            <li class="main-navi-contact-link">
+              <a href="" class="navi-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Блок телефон та електронна пошта-->
+        <address class="topline-adress-box">
+          <ul class="contacts-conteiner list">
+            <li class="mail-box">
+              <a href="mailto:info@devstudio.com" class="contacts-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="contacts-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <!--Основний контент Portfolio, унікальний контент-->
+    <main>
+      <section class="portf-box">
+        <div class="container">
+          <!--Hidden H1-->
+          <h1 class="section-title visually-hidden">Portfolio</h1>
+
+          <!--Список для Filters (Buttons)-->
+          <ul class="buttons-block list">
+            <li>
+              <button type="button" class="filter-button">All</button>
+            </li>
+            <li>
+              <button type="button" class="filter-button">Web Site</button>
+            </li>
+            <li>
+              <button type="button" class="filter-button">App</button>
+            </li>
+            <li>
+              <button type="button" class="filter-button">Design</button>
+            </li>
+            <li>
+              <button type="button" class="filter-button">Marketing</button>
+            </li>
+          </ul>
+
+          <!--Hidden H2-->
+          <h2 class="visually-hidden">Portfolio List</h2>
+          <!--Список для Images-->
+          <ul class="cards-block list">
+            <!--Image1-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-1.jpg"
+                    alt="Banking App Interface Concept"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">
+                    Banking App Interface Concept
+                  </h3>
+                  <p class="image-description">App</p>
+                </div>
+              </a>
+            </li>
+            <!--Image2-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-2.jpg"
+                    alt="Phone Cashless Payment"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Cashless Payment</h3>
+                  <p class="image-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <!--Image3-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-3.jpg"
+                    alt="Laptop Meditaion App"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Meditation App</h3>
+                  <p class="image-description">App</p>
+                </div>
+              </a>
+            </li>
+            <!--Image4-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-4.jpg"
+                    alt="Taxi Service Look Inside"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Taxi Service</h3>
+                  <p class="image-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <!--Image5-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-5.jpg"
+                    alt="Phone Screen Illustrations"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Screen Illustrations</h3>
+                  <p class="image-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <!--Image6-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-6.jpg"
+                    alt="Young Girl in Orange"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Online Courses</h3>
+                  <p class="image-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <!--Image7-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-7.jpg"
+                    alt="Instagram Stories Concept"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Instagram Stories Concept</h3>
+                  <p class="image-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <!--Image8-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-8.jpg"
+                    alt="Girl in Grey with Organic Food"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Organic Food</h3>
+                  <p class="image-description">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <!--Image9-->
+            <li class="portf-list-box">
+              <a class="portf-link" href="">
+                <div class="overflowcard">
+                  <img
+                    src="./images/img-2-1-9.jpg"
+                    alt="Fresh Coffee with Milk"
+                    width="360"
+                    class="portf-photos"
+                  />
+                  <p class="overflow-text">
+                    4 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="card-description">
+                  <h3 class="image-text-title">Fresh Coffee</h3>
+                  <p class="image-description">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Футер сторінки Portfolio (ідентичний для Index) - DONE -->
+    <footer class="underground">
+      <div class="container footer-all">
+        <div class="footer-box">
+          <!--Logo WebStudio-->
+          <a href="./index.html" target="_parent" class="logodecor-footer">
+            <span class="logoweb">WEB</span
+            ><span class="logostudiofooter">STUDIO</span>
+          </a>
+
+          <!--footer text-->
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+
+        <div class="footer-socialweb-box">
+          <h3 class="footer-socialweb-box-title">Social media</h3>
+          <ul class="footer-socialwebs-list">
+            <li class="footer-socialweb-item">
+              <a href="" class="footer-socialweb-link">
+                <svg class="footer-social-item-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socialweb-item">
+              <a href="" class="footer-socialweb-link">
+                <svg class="footer-social-item-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socialweb-item">
+              <a href="" class="footer-socialweb-link">
+                <svg class="footer-social-item-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socialweb-item">
+              <a href="" class="footer-socialweb-link">
+                <svg class="footer-social-item-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="subscribe-form-box">
+          <label class="subscribe-paragraf">Subscribe</label>
+          <div class="subscribe-area">
+            <input
+              class="subscribe-input-style"
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+              required
+            />
+
+            <button type="subscribe" class="subscribe-button">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
