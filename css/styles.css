@@ -2098,17 +2098,17 @@ a {
 
 /* ---------------- DESKTOP ---------------- */
 @media screen and (min-width: 1158px) {
-}
-/* ----------------Main page (Index) Block2 Preferences---------------- */
-.pref-list-box {
-  width: 264px;
-}
+  /* ----------------Main page (Index) Block2 Preferences---------------- */
+  .pref-list-box {
+    width: 264px;
+  }
 
-.preferences-list {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.pref-paragraph {
-  font-weight: 400;
+  .preferences-list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .pref-paragraph {
+    font-weight: 400;
+  }
 }
