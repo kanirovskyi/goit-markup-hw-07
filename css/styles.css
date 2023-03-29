@@ -93,7 +93,7 @@ a {
 }
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158x;
+    width: 1158px;
   }
 }
 
@@ -1539,21 +1539,20 @@ a {
 
   /* ----------------Main page (Index) Block2 Preferences---------------- */
 
-  .preference-contain {
-    padding: 120px 0;
-  }
-
   .preferences {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .pref-list-box {
+    width: 356px;
   }
 
   .preferences-list {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    /* 120% */
-
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--dark-color);
     margin-bottom: 8px;
@@ -1586,14 +1585,13 @@ a {
 
   .pref-paragraph {
     line-height: 1.5;
-    /* 150% */
-    width: 264px;
+    font-weight: 500;
   }
 
   /* ----------------Main page (Index) Block 3. What We Are Doing---------------- */
 
   .what-wer-doing {
-    padding-bottom: 120px;
+    padding-top: 0;
   }
 
   .wwd-text {
@@ -2088,7 +2086,7 @@ a {
 }
 
 /* ---------------- HIDDEN ---------------- */
-@media screen and (max-width: 1057px) {
+@media screen and (max-width: 1157.5px) {
   .what-wer-doing {
     display: none;
   }
@@ -2099,5 +2097,18 @@ a {
 }
 
 /* ---------------- DESKTOP ---------------- */
-@media screen and (min-width: 1058px) {
+@media screen and (min-width: 1158px) {
+}
+/* ----------------Main page (Index) Block2 Preferences---------------- */
+.pref-list-box {
+  width: 264px;
+}
+
+.preferences-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.pref-paragraph {
+  font-weight: 400;
 }
