@@ -1241,8 +1241,8 @@ a {
   .hero-section {
     background-color: var(--hero-background-color);
 
-    max-width: 1440px;
-    height: 600px;
+    max-width: 768px;
+    height: 436px;
     margin-left: auto;
     margin-right: auto;
     outline: var(--body-outline);
@@ -1252,15 +1252,27 @@ a {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-image-main.jpg");
+      url("../images/hero-image-tab.jpg");
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
 
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-image-tab@2x.jpg);
+    }
   }
 
   .hero-image-text {
@@ -2119,6 +2131,43 @@ a {
 
 /* ---------------- DESKTOP ---------------- */
 @media screen and (min-width: 1158px) {
+  .hero-section {
+    background-color: var(--hero-background-color);
+
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: var(--body-outline);
+
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-image-desk.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-image-desk@2x.jpg);
+    }
+  }
+
   /* ----------------Main page (Index) Block2 Preferences---------------- */
   .pref-list-box {
     width: 264px;
