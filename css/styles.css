@@ -743,11 +743,13 @@ a {
 
   .customers-icons-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 16px;
   }
 
   .customers-icon-box {
-    width: 168px;
+    width: 190px;
     height: 88px;
   }
 
@@ -954,18 +956,19 @@ a {
 
   /* ----------------Footer---------------- */
 
-  .footer-all {
-    display: flex;
-  }
-
   .footer-box {
-    flex-direction: column;
     width: 264px;
-    margin-right: 120px;
+    margin: 0 auto;
+    margin-bottom: 72px;
   }
 
   .footer-socialweb-box {
-    margin-right: 80px;
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .subscribe-form-box {
+    text-align: center;
   }
 
   .footer-socialweb-box-title {
@@ -977,6 +980,7 @@ a {
 
   .footer-socialwebs-list {
     display: flex;
+    justify-content: center;
     gap: 16px;
   }
   .footer-socialweb-item {
@@ -1026,6 +1030,7 @@ a {
   .logodecor-footer {
     display: block;
     margin-bottom: 16px;
+    text-align: center;
   }
 
   .footer-text {
@@ -1035,24 +1040,20 @@ a {
     line-height: 1.5;
   }
 
-  .subscribe-area {
-    display: flex;
-  }
-
   .subscribe-input-style {
     box-sizing: border-box;
     background: transparent;
-    margin-right: 24px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     font-size: 12px;
     line-height: 2;
-    width: 264px;
+    width: 100%;
     align-items: center;
     letter-spacing: 0.04em;
     padding: 8px 212px 8px 16px;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 16px;
 
     transition-property: border;
     transition-duration: 350ms;
@@ -1072,7 +1073,7 @@ a {
     gap: 16px;
     background-color: var(--brand-color);
     border-radius: 4px;
-
+    margin: 0 auto;
     font-weight: 500;
     line-height: 1.5;
     color: var(--white-color);
@@ -1714,7 +1715,7 @@ a {
 
   .customers {
     background-color: var(--white-color);
-    padding: 120px 0;
+    /* padding: 120px 0; */
   }
 
   .customers-title {
@@ -1730,7 +1731,9 @@ a {
 
   .customers-icons-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
   }
 
   .customers-icon-box {
@@ -1945,16 +1948,6 @@ a {
     display: flex;
   }
 
-  .footer-box {
-    flex-direction: column;
-    width: 264px;
-    margin-right: 120px;
-  }
-
-  .footer-socialweb-box {
-    margin-right: 80px;
-  }
-
   .footer-socialweb-box-title {
     font-weight: 500;
     line-height: 1.5;
@@ -2020,6 +2013,7 @@ a {
     background-color: var(--dark-color);
     font-size: 16px;
     line-height: 1.5;
+    width: 264px;
   }
 
   .subscribe-area {
@@ -2098,6 +2092,12 @@ a {
   .pref-icon-box {
     display: none;
   }
+
+  .footer-all {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    max-width: 530px;
+  }
 }
 
 /* ---------------- DESKTOP ---------------- */
@@ -2114,5 +2114,15 @@ a {
   }
   .pref-paragraph {
     font-weight: 400;
+  }
+
+  /* ------------------- FOOTER ------------------- */
+  .footer-box {
+    width: 264px;
+    margin-right: 120px;
+  }
+
+  .footer-socialweb-box {
+    margin-right: 80px;
   }
 }
