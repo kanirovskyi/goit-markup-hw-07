@@ -627,12 +627,24 @@ a {
   /* ----------------Main page (Index) Block4 Our Team---------------- */
   .our-team {
     background-color: var(--light-color);
-    padding: 120px 0;
   }
 
-  .our-team-list {
+  /* .our-team-list {
     display: flex;
     gap: 24px;
+  } */
+
+  .team-cards {
+    width: 264px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
+  }
+
+  .team-cards:not(:last-child) {
+    margin-bottom: 72px;
   }
 
   .our-team-text {
@@ -662,13 +674,6 @@ a {
     line-height: 1.5;
     /* 150% */
     margin-bottom: 8px;
-  }
-
-  .team-cards {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--white-color);
   }
 
   .card-container {
@@ -1615,20 +1620,19 @@ a {
   /* ----------------Main page (Index) Block4 Our Team---------------- */
   .our-team {
     background-color: var(--light-color);
-    padding: 120px 0;
   }
 
   .our-team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
   }
 
   .our-team-text {
-    margin: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    /* 111% */
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -2086,7 +2090,7 @@ a {
 }
 
 /* ---------------- HIDDEN ---------------- */
-@media screen and (max-width: 1157.5px) {
+@media screen and (max-width: 1157px) {
   .what-wer-doing {
     display: none;
   }
