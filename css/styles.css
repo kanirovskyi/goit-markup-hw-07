@@ -233,8 +233,8 @@ a {
   .hero-section {
     background-color: var(--hero-background-color);
 
-    max-width: 1440px;
-    height: 600px;
+    max-width: 428px;
+    height: 432px;
     margin-left: auto;
     margin-right: auto;
     outline: var(--body-outline);
@@ -244,27 +244,39 @@ a {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-image-main.jpg");
+      url("../images/hero-image-mob.jpg");
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
 
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-image-mob@2x.jpg);
+    }
   }
 
   .hero-image-text {
-    /*margin: 0;*/
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    /* or 107% */
+    font-size: 36px;
+    line-height: 1.11;
     color: var(--white-color);
     letter-spacing: 0.02em;
     max-width: 496px;
     margin: 0 auto 48px;
+    margin-bottom: 72px;
   }
 
   .heroimage-button {
@@ -2093,6 +2105,10 @@ a {
     flex-wrap: wrap;
     gap: 72px 24px;
     max-width: 530px;
+  }
+
+  .pref-list-box {
+    border: 1px solid #000000;
   }
 }
 
