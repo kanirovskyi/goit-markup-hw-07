@@ -550,10 +550,6 @@ a {
 
   /* ----------------Main page (Index) Block2 Preferences---------------- */
 
-  .preference-contain {
-    /* padding: 96px 0; */
-  }
-
   .preferences {
     display: flex;
     flex-wrap: wrap;
