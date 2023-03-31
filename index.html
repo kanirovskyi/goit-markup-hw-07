@@ -31,37 +31,70 @@
   <!--MainPage-->
   <body>
     <!--Header сторінки Index (ідентичний для Portfolio)- DONE -->
-    <!-- <header class="top-line">
+    <header class="top-line">
       <div class="container header-line">
         <nav class="header-navi">
-          
           <a href="./index.html" target="_parent" class="logodecor">
             <span class="logoweb">WEB</span
             ><span class="logostudio">STUDIO</span>
           </a>
 
-          
           <ul class="main-navi list">
-            
             <li class="main-navi-studio-link">
               <a href="./index.html" target="_parent" class="navi-link current"
                 >Studio</a
               >
             </li>
-           
+
             <li class="main-navi-portfolio-link">
               <a href="./portfolio.html" target="_parent" class="navi-link"
                 >Portfolio</a
               >
             </li>
-           
+
             <li class="main-navi-contact-link">
               <a href="" class="navi-link">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-Vector" width="32" height="22">
+            <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="modal-button-close menu-toggle js-close-menu"
+          >
+            <svg class="modal-button-close-svg" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li><a href="" class="link current">Studio</a></li>
+            <li><a href="" class="link">Portfolio</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+          </ul>
+          <ul class="mobile-contacts">
+            <li><a href="" class="link current">Studio</a></li>
+            <li><a href="" class="link">Portfolio</a></li>
+          </ul>
+          <ul class="mobile-social-icons">
+            <li><a href="" class="link current">Studio</a></li>
+            <li><a href="" class="link">Portfolio</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+          </ul>
+        </div>
+
         <address class="topline-adress-box">
           <ul class="contacts-conteiner list">
             <li class="mail-box">
@@ -77,7 +110,7 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
 
     <!--Основний контент HeroImage, унікальний контент-->
     <main>
@@ -597,6 +630,13 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
