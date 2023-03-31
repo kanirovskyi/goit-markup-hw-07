@@ -1286,16 +1286,11 @@ a {
 
   .top-line {
     background-color: var(--white-color);
-    padding: 24px 0;
+    padding: 13px 0;
     border-bottom: 1px solid #e7e9fc;
   }
 
   .header-line {
-    display: flex;
-    align-items: center;
-  }
-
-  .main-navi {
     display: flex;
     align-items: center;
   }
@@ -1307,11 +1302,10 @@ a {
 
   .contacts-conteiner {
     display: flex;
-    align-items: center;
   }
 
   .logodecor {
-    margin-right: 76px;
+    margin-right: 120px;
   }
 
   .logoweb {
@@ -1338,13 +1332,19 @@ a {
     color: var(--dark-color);
   }
 
-  .main-navi-studio-link {
+  .main-navi {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* .main-navi-studio-link {
     margin-right: 40px;
   }
 
   .main-navi-portfolio-link {
     margin-right: 40px;
-  }
+  } */
 
   .navi-link {
     color: var(--dark-color);
@@ -1360,15 +1360,16 @@ a {
     margin-left: auto;
   }
 
-  .mail-box {
+  /* .mail-box {
     margin-right: 40px;
-  }
+  } */
 
   .contacts-link {
     color: var(--text-color);
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.33;
     text-decoration: none;
     transition-property: color;
     transition-duration: 350ms;
@@ -2270,6 +2271,14 @@ a {
     color: var(--white-color);
     margin-bottom: 16px;
   }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
 }
 
 /* ---------------- HIDDEN ---------------- */
@@ -2291,10 +2300,117 @@ a {
   .pref-list-box {
     border: 1px solid #000000;
   }
+
+  .contacts-conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 
 /* ---------------- DESKTOP ---------------- */
 @media screen and (min-width: 1158px) {
+  /*--------------------HEADER------------------*/
+  .top-line {
+    background-color: var(--white-color);
+    padding: 24px 0;
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .main-navi {
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts-conteiner {
+    display: flex;
+    align-items: center;
+  }
+
+  .logodecor {
+    margin-right: 76px;
+  }
+
+  .logoweb {
+    height: 24px;
+
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+  }
+
+  .logostudio {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+  }
+
+  .main-navi-studio-link {
+    margin-right: 40px;
+  }
+
+  .main-navi-portfolio-link {
+    margin-right: 40px;
+  }
+
+  .navi-link {
+    color: var(--dark-color);
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .topline-adress-box {
+    margin-left: auto;
+  }
+
+  .mail-box {
+    margin-right: 40px;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .navi-link.current {
+    color: var(--brand-color);
+    padding: 24px 0;
+    position: relative;
+  }
+
+  .navi-link.current::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--pressed-state);
+    border-radius: 2px;
+  }
+
+  .navi-link:hover,
+  .navi-link:focus,
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: var(--pressed-state);
+  }
+
+  /*--------------------HERO------------------*/
   .hero-section {
     background-color: var(--hero-background-color);
 
