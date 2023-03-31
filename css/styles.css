@@ -121,6 +121,7 @@ a {
   .header-line {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .main-navi {
@@ -250,17 +251,14 @@ a {
     text-decoration: none;
   }
 
-  .link {
-  }
-
   .menu .link:hover,
   .menu .link:focus {
     text-decoration: underline;
   }
 
   .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 24px;
+    min-width: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,6 +285,9 @@ a {
 
   .menu-container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100vw;
@@ -307,9 +308,9 @@ a {
 
   .menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: var(--white-color);
+    top: 24px;
+    right: 24px;
+    color: var(--black-color);
   }
 
   .mobile-menu {
@@ -317,7 +318,6 @@ a {
     margin: 0;
     list-style: none;
     margin-top: 40px;
-    margin-bottom: 284px;
   }
 
   .mobile-menu .link {
@@ -332,6 +332,62 @@ a {
 
   .mobile-menu .link.current {
     color: #404bbf;
+  }
+
+  .mobile-contacts {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 48px;
+  }
+
+  .mob-menu-contact-phone {
+    display: block;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--brand-color);
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 420px) {
+    .mob-menu-contact-phone {
+      font-size: 24px;
+    }
+  }
+  .mob-menu-contact-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text-color);
+  }
+
+  .mobile-socialwebs-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-socialweb-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-socialweb-link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--brand-color);
+    color: var(--white-color);
+    transition-property: background-color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-social-item-icon {
+    fill: currentColor;
   }
 
   /* ----------------Main page (Index)---------------- */
@@ -462,22 +518,19 @@ a {
 
   .modal-button-close {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    color: var(--black-color);
-    background-color: var(--accent-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    cursor: pointer;
     padding: 0;
-    transition-property: color, background-color, visibility;
-    transition-duration: 350ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 24px;
+    right: 16px;
+    cursor: pointer;
+    transition: background var(--transition);
   }
 
   .modal-button-close:hover {
