@@ -225,30 +225,57 @@
           <ul class="wwd list">
             <!--Image1-->
             <li>
-              <img
-                src="./images/img-1-2-1.jpg"
-                alt="iMac"
-                width="360"
-                class="section2_photos"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do-card-1-desk.jpg    1x,
+                    ./images/what-we-do-card-1-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/what-we-do-card-1-desk.jpg"
+                  alt="iMac"
+                  width="360"
+                  class="section2_photos"
+                />
+              </picture>
             </li>
             <!--Image2-->
             <li>
-              <img
-                src="./images/img-1-2-2.jpg"
-                alt="iMac"
-                width="360"
-                class="section2_photos"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do-card-2-desk.jpg    1x,
+                    ./images/what-we-do-card-2-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/what-we-do-card-2-desk.jpg"
+                  alt="iMac"
+                  width="360"
+                  class="section2_photos"
+                />
+              </picture>
             </li>
             <!--Image3-->
             <li>
-              <img
-                src="./images/img-1-2-3.jpg"
-                alt="iMac"
-                width="360"
-                class="section2_photos"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do-card-3-desk.jpg    1x,
+                    ./images/what-we-do-card-3-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <img
+                  src="./images/what-we-do-card-3-desk.jpg"
+                  alt="iMac"
+                  width="360"
+                  class="section2_photos"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -261,12 +288,36 @@
           <!-- CARD1 -->
           <ul class="our-team-list list">
             <li class="team-cards">
-              <img
-                src="./images/team-card-1-mob.jpg"
-                alt="Mark Guerrero's photo"
-                width="264"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-card-1-desk.jpg    1x,
+                    ./images/team-card-1-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-1-tab.jpg    1x,
+                    ./images/team-card-1-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-1-mob.jpg    1x,
+                    ./images/team-card-1-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-card-1-mob.jpg"
+                  width="264"
+                  alt="Mark Guerrero's photo"
+                  class="team-photo"
+                />
+              </picture>
+
               <div class="card-container">
                 <h3 class="partner-name">Mark Guerrero</h3>
                 <p class="partner-place">Product Designer</p>
@@ -310,12 +361,35 @@
             </li>
             <!-- CARD2 -->
             <li class="team-cards">
-              <img
-                src="./images/team-card-2-mob.jpg"
-                alt="Tom Ford's photo"
-                width="264"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-card-2-desk.jpg    1x,
+                    ./images/team-card-2-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-2-tab.jpg    1x,
+                    ./images/team-card-2-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-2-mob.jpg    1x,
+                    ./images/team-card-2-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-card-2-mob.jpg"
+                  alt="Tom Ford's photo"
+                  width="264"
+                  class="team-photo"
+                />
+              </picture>
               <div class="card-container">
                 <h3 class="partner-name">Tom Ford</h3>
                 <p class="partner-place">Frontend Developer</p>
@@ -359,12 +433,35 @@
             </li>
             <!-- CARD3 -->
             <li class="team-cards">
-              <img
-                src="./images/team-card-3-mob.jpg"
-                alt="Camila Garcia's photo"
-                width="264"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-card-3-desk.jpg    1x,
+                    ./images/team-card-3-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-3-tab.jpg    1x,
+                    ./images/team-card-3-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-3-mob.jpg    1x,
+                    ./images/team-card-3-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-card-3-mob.jpg"
+                  alt="Camila Garcia's photo"
+                  width="264"
+                  class="team-photo"
+                />
+              </picture>
               <div class="card-container">
                 <h3 class="partner-name">Camila Garcia</h3>
                 <p class="partner-place">Marketing</p>
@@ -408,12 +505,35 @@
             </li>
             <!-- CARD4 -->
             <li class="team-cards">
-              <img
-                src="./images/team-card-4-mob.jpg"
-                alt="Daniel Wilson's photo"
-                width="264"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-card-4-desk.jpg    1x,
+                    ./images/team-card-4-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-4-tab.jpg    1x,
+                    ./images/team-card-4-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-card-4-mob.jpg    1x,
+                    ./images/team-card-4-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-card-4-mob.jpg"
+                  alt="Daniel Wilson's photo"
+                  width="264"
+                  class="team-photo"
+                />
+              </picture>
               <div class="card-container">
                 <h3 class="partner-name">Daniel Wilson</h3>
                 <p class="partner-place">UI Designer</p>
